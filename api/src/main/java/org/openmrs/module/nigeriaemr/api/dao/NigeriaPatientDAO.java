@@ -29,4 +29,7 @@ public interface NigeriaPatientDAO extends PatientDAO {
 	        throws DAOException;
 	
 	String getPatientIdentifier(Patient patient, PatientIdentifierType patientIdentifierType) throws DAOException;
+	
+	String getPatientIdentifierByPatientsId(Integer patientId, Integer identifierType) throws DAOException;
+	
 }
